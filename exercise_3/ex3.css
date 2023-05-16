@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lobster&family=Orbitron&family=Passion+One:wght@700&family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: "Casio Number";
+    src: url(./casio-fx-702p.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "CasioLogo";
+    src: url(./eurostile_extended_black.ttf) format('truetype');
+}
+
+html, body{
+    height: 100%;
+}
+
+main{
+    margin: auto;
+    margin-top: 2%;
+    max-width: fit-content;
+    height: 730px;
+    outline: 10px solid;
+    border-radius: 38px;
+    padding: 10px;
+    background-color: black;
+}
+
+#brand{
+    color:white;
+    font-family: "CasioLogo";
+    font-size: 20px;
+}
+
+#screen{
+
+ /*    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+ */
+    margin-top: 3%;
+    margin-left: 0%;
+    background-color: lightblue;
+    height: 20%;
+    border-radius: 20px;
+    max-width: 380px;
+    padding: 10px;
+    
+    overflow: auto;
+    white-space: nowrap;
+    /* word-wrap: break-word; */
+    font-size: 50px;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: "Casio Number";
+}
+
+#number{
+    margin-top: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-auto-rows:90px;
+    gap: 0.3em 0.3em; 
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    margin-left: 10px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Orbitron', sans-serif;
+
+    background-color: dimgrey;
+    color: white;
+}
+
+.buttons:hover{
+    color: chartreuse;
+}
+
+.operator{
+    background-color:darkorange;
+}
+
+#del{
+    font-size: 25px;
+}
